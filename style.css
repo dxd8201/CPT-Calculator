@@ -1,0 +1,230 @@
+/* =========== */
+/* General CSS */
+/* =========== */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    padding: .25rem .1rem .25rem .1rem;
+    letter-spacing: .1rem;
+}
+
+/* ============= */
+/* Main Grid CSS */
+/* ============= */
+
+.main-grid-container {
+    display: grid;
+    grid-template-columns: .5fr 1fr  1fr 1fr;
+    grid-template-rows: .5fr 1fr  1fr 1fr;
+
+    min-height: 100vh;
+    width: 100vw;
+}
+
+/* ========== */
+/* Header CSS */
+/* ========== */
+
+.header-container {
+    background-color: rgb(36, 34, 80);
+    grid-area: 1 / 1 / 2 / 5;
+    box-shadow: 0 8px 6px -6px rgb(0 0 0);
+    z-index: 2;
+}
+
+.title-logo-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 3rem;
+}
+
+.todo-logo {
+    height: 2rem;
+    width: 2rem;
+    color: goldenrod;
+}
+
+.title-logo-container h1 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+
+
+/* ================ */
+/* Main Content CSS */
+/* ================ */
+
+.main-content-container {
+    background-color: rgb(30, 29, 49);
+    grid-area: 2 / 2 / 5 / 5;
+}
+
+.results-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+    background-color: rgb(36, 34, 80);
+    margin-top: 2rem;
+    box-shadow: 5px 5px 15px 1px rgb(0 0 0 / 34%);
+    border-radius: 9px;
+}
+
+.main-project-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: .25rem;
+    width: 100%;
+    transition: 1s all;
+}
+
+.add-todo-icon {
+    color: #fff;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 1rem;
+}
+
+.add-todo-icon:hover {
+    transform: rotate(90deg);
+    transition: 1s all;
+}
+
+.main-project-title {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff; 
+    margin-right: auto;
+}
+
+.calculated-results-container {
+    width: 75%;
+    height: auto;
+    text-align: center;
+    margin-top: .75rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.result-info-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(150, 150, 228);
+    padding: .75rem;
+    margin-top: .75rem;
+    flex: 1;
+    width: 100%;
+    border-radius: 9px;
+    box-shadow: 5px 5px 15px 1px rgb(0 0 0 / 34%);
+    margin-bottom: 1rem;
+    transition: .5s all;
+    
+}
+
+.result-info-container:hover {
+    box-shadow: inset 5px 5px 15px 1px rgb(0 0 0 / 34%);
+}
+
+.result-info {
+    display: flex;
+    word-break: break-all;
+    margin-right: auto;
+}
+
+.todo-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    justify-self: flex-end;
+    justify-items: flex-end;
+    margin-right: 1rem;
+}
+
+/* ============ */
+/* Sidebar CSS */
+/* ============ */
+
+.sidebar-container {
+    background-color: rgb(30, 28, 66);
+    grid-area: 2 / 1 / 5 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-right: 1px solid rgb(150, 150, 228);
+    z-index: 1;
+}
+
+.add-new-projects-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    min-width: 60%;
+    transition: 1s all;
+}
+
+.add-new-projects-container h1 {
+    margin-right: auto;
+}
+
+.add-new-projects-container .side-bar-icon:hover {
+    transform: rotate(90deg);
+    transition: .75s all;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    margin-top: .5rem;
+    gap: .2rem;
+    cursor: pointer;
+    width: 75%;
+    height: 2rem;
+    border-radius: 10px;
+    padding: .2rem 0 .2rem 1rem;
+    transition: all .3s;
+}
+
+.input-container, .add-new-projects-container {
+    color: #fff;
+}
+
+.add-new-projects-container, .label-alignment-container {
+    margin-top: 1rem;
+}
+
+.label-alignment-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: .5rem;
+}
+
+.side-bar-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    color: #fff;
+}

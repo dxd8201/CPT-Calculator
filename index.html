@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPT Calculator</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-grid-container" id="mainGridContainer">
+        <div class="header-container" id="headerContainer">
+            <div class="title-logo-container" id="titleLogoContainer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 todo-logo">
+                    <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0112 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 013.498 1.307 4.491 4.491 0 011.307 3.497A4.49 4.49 0 0121.75 12a4.49 4.49 0 01-1.549 3.397 4.491 4.491 0 01-1.307 3.497 4.491 4.491 0 01-3.497 1.307A4.49 4.49 0 0112 21.75a4.49 4.49 0 01-3.397-1.549 4.49 4.49 0 01-3.498-1.306 4.491 4.491 0 01-1.307-3.498A4.49 4.49 0 012.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 011.307-3.497 4.49 4.49 0 013.497-1.307zm7.007 6.387a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                  </svg>
+                  
+                <h1>CPT Calculator</h1>
+            </div>
+            
+            
+        </div>
+        
+        <div class="sidebar-container" id="sidebarContainer">
+            
+                
+            <div class="add-new-projects-container" id="addNewProjectsContainer">
+                <h2>Inputs</h2>
+            </div>
+                
+
+            <div class="input-container" id="inputContainer">
+
+                <div class="label-alignment-container">
+                    <label for="total-hours">Total Hours:</label>
+                    <input type="number" id="totalHours" name="totalHours" required>
+                 </div>
+
+                <div class="label-alignment-container">
+                    <label for="remaining-hours">Remaining Hours:</label>
+                    <input type="number" id="remainingHours" name="remainingHours" required>
+                </div>
+
+                <div class="label-alignment-container">
+                    <label for="remaining-days">Remaining Days:</label>
+                    <input type="number" id="remainingDays" name="remainingDays" required>
+                </div>
+             </div>   
+        </div>
+
+        <div class="main-content-container" id="mainContentContainer">
+            <div class="results-container">
+                <div class="main-project-title-container" id="main-project-title-container">
+                    <div class="main-project-title" id="mainProjectTitle">Results</div>
+                </div>
+                
+                
+                <div class="calculated-results-container" id="calculatedResultsContainer">
+                    <div class="result-info-container" id="result-info-container">
+                        <div class="result-info" id="resultInfo"># of full time sessions remaining</div>
+                    </div>                    
+                </div>
+
+                <div class="calculated-results-container" id="calculatedResultsContainer">
+                    <div class="result-info-container" id="result-info-container">
+                        <div class="result-info" id="resultInfo">How many saturday sessions can be attended</div>
+                    </div>                    
+                </div>
+
+                <div class="calculated-results-container" id="calculatedResultsContainer">
+                    <div class="result-info-container" id="result-info-container">
+                        <div class="result-info" id="resultInfo">% of remaining hours</div>
+                    </div>                    
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>

@@ -24,14 +24,11 @@
         
         <div class="sidebar-container" id="sidebarContainer">
             
-                
             <div class="add-new-projects-container" id="addNewProjectsContainer">
                 <h2>Inputs</h2>
             </div>
                 
-
             <div class="input-container" id="inputContainer">
-
                 <div class="label-alignment-container">
                     <label for="total-hours">Total Hours:</label>
                     <input type="number" id="totalHours" name="totalHours" required>
@@ -46,7 +43,16 @@
                     <label for="remaining-days">Remaining Days:</label>
                     <input type="number" id="remainingDays" name="remainingDays" required>
                 </div>
-             </div>   
+                
+                <div class="label-alignment-container">
+                    <label for="session-length">Session Length: </label>
+                    <input type="number" id="sessionLength" name="sessionLength">
+                </div>
+
+                <button class="calc-btn" id="calcBtn">Calculate</button>
+            </div>   
+
+            
         </div>
 
         <div class="main-content-container" id="mainContentContainer">
@@ -58,22 +64,21 @@
                 
                 <div class="calculated-results-container" id="calculatedResultsContainer">
                     <div class="result-info-container" id="result-info-container">
-                        <div class="result-info" id="resultInfo"># of full time sessions remaining</div>
+                        <div class="result-info" id="remainingSessions"># of full time sessions remaining</div>
                     </div>                    
                 </div>
 
                 <div class="calculated-results-container" id="calculatedResultsContainer">
                     <div class="result-info-container" id="result-info-container">
-                        <div class="result-info" id="resultInfo">How many saturday sessions can be attended</div>
+                        <div class="result-info" id="saturdaySessions">How many saturday sessions can be attended</div>
                     </div>                    
                 </div>
 
                 <div class="calculated-results-container" id="calculatedResultsContainer">
                     <div class="result-info-container" id="result-info-container">
-                        <div class="result-info" id="resultInfo">% of remaining hours</div>
+                        <div class="result-info" id="percentageRemaining">% of remaining hours</div>
                     </div>                    
                 </div>
-
             </div>
         </div>
 

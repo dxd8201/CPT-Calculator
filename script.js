@@ -9,9 +9,6 @@ const saturdaySessions = document.querySelector("#saturdaySessions");
 const percentageRemaining = document.querySelector("#percentageRemaining");
 
 
-
-console.log("Hello world");
-
 const sessionsRemaining = function (hoursRemaining, sessionLength) {
     let sessions = hoursRemaining / sessionLength; 
     console.log(`You have approximately ${sessions} sessions remaining.`);

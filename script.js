@@ -11,7 +11,6 @@ const percentageRemaining = document.querySelector("#percentageRemaining");
 
 const sessionsRemaining = function (hoursRemaining, sessionLength) {
     let sessions = hoursRemaining / sessionLength; 
-    console.log(`You have approximately ${sessions} sessions remaining.`);
     remainingSessions.textContent = `You have approximately ${sessions} sessions remaining.`;
 }
 
@@ -34,19 +33,16 @@ const remainingSaturdays = function (hoursRemaining, sessionLength, startDate, e
     } else {
         saturdaySessions.textContent = `You have 0 Saturday sessions remaining.`;
     }
-    console.log(`You have approximately ${saturdaySesh} Saturday sessions remaining.`);
 }
 
 const percentageRem = function (totalHours, remainingHours) {
     let percentage = remainingHours / totalHours;
     let totalPercent = percentage * 100;
-    console.log(`You have approximately ${totalPercent} percentage of hours remaining.`)
-    percentageRemaining.textContent = `You have approximately ${totalPercent} percentage of hours remaining.`;
+    let roundedPercent = totalPercent.toFixed(0);
+    percentageRemaining.textContent = `You have approximately ${roundedPercent} percent of total hours remaining.`;
 }
 
 function calculateBusinessDays(startDate, endDate){
-    
-   
     // Validate input
     if (endDate < startDate)
         return 0;
@@ -93,7 +89,6 @@ calcBtn.addEventListener("click", function () {
     console.log(remainingHours.value);
     console.log(sessionLength.value);
 
-    
     sessionsRemaining(remainingHours.value, sessionLength.value);
     remainingSaturdays(remainingHours.value, sessionLength.value, startDate.value, endDate.value);
     percentageRem(totalHours.value, remainingHours.value);
